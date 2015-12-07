@@ -1,5 +1,8 @@
 This script is written using the shell, in order to quickly deploy `LEMP`/`LAMP`/`LNMP`/`LNMPA`/`LTMP`(Linux, Nginx/Tengine, MySQL in a production environment/MariaDB/Percona, PHP, JAVA), applicable to CentOS 5~7(including redhat), Debian 6~8, Ubuntu 12~15 of 32 and 64.
 
+看你不爽自己改了改
+
+
 Script properties:
 - Continually updated
 - Source compiler installation, most stable source is the latest version, and download from the official site
