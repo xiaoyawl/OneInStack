@@ -58,10 +58,10 @@ sed -i 's/^id:.*$/id:3:initdefault:/' /etc/inittab
 init q
 
 # PS1
-[ -z "`cat ~/.bashrc | grep ^PS1`" ] && echo 'PS1="\[\e[37;40m\][\[\e[32;40m\]\u\[\e[37;40m\]@\h \[\e[35;40m\]\W\[\e[0m\]]\\$ "' >> ~/.bashrc 
+#[ -z "`cat ~/.bashrc | grep ^PS1`" ] && echo 'PS1="\[\e[37;40m\][\[\e[32;40m\]\u\[\e[37;40m\]@\h \[\e[35;40m\]\W\[\e[0m\]]\\$ "' >> ~/.bashrc 
 
 # history size 
-sed -i 's/^HISTSIZE=.*$/HISTSIZE=100/' /etc/profile
+sed -i 's/^HISTSIZE=.*$/HISTSIZE=1000/' /etc/profile
 [ -z "`cat ~/.bashrc | grep history-timestamp`" ] && echo "export PROMPT_COMMAND='{ msg=\$(history 1 | { read x y; echo \$y; });user=\$(whoami); echo \$(date \"+%Y-%m-%d %H:%M:%S\"):\$user:\`pwd\`/:\$msg ---- \$(who am i); } >> /tmp/\`hostname\`.\`whoami\`.history-timestamp'" >> ~/.bashrc
 
 # /etc/security/limits.conf
